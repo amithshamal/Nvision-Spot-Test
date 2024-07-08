@@ -14,7 +14,7 @@ To run this project locally, follow these steps:
 
 1. Clone this repository
 2. Navigate to the project directory
-3. run composer install to Install dependencies
+3. Run composer install to Install dependencies
 4. Copy the .env.example file to .env
 5. Update the database settings in the .env file.
 6. Migrate the database (php artisan migrate)
@@ -41,7 +41,7 @@ The following endpoints are available:
 - Authentication:
   - POST /api/v1/login
   - POST /api/v1/register
-  - POST /api/v1/logout
+  - GET /api/v1/logout
 
 
 - Order Management:
