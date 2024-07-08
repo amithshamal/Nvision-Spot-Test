@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "a81cc631-5bd1-40b4-94ed-ab405edc9fd6",
+		"name": "Nvision Spot Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2375821",
+		"_collection_link": "https://universal-resonance-823672.postman.co/workspace/Laravel-Testing~87d6bca0-f8c8-47a8-851f-ba1b3da95668/collection/2375821-a81cc631-5bd1-40b4-94ed-ab405edc9fd6?action=share&source=collection_link&creator=2375821"
+	},
+	"item": [
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "New Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 4|SNqw1ah0suq28r4sxCf8IF378b33oevF1xSWvKm0d62d9dd3",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_name",
+									"value": "customer 1",
+									"type": "text"
+								},
+								{
+									"key": "order_value",
+									"value": "245.23",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/v1/order"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@admin.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "admin@admin.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 2|LHKNkwOZI0U30rzL0eTHxeuH54qdAvScOjPKCkYC9722491a",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/v1/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "User 1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/v1/register"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
